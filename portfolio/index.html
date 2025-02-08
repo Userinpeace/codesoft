@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>akash_Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-r"></i>
+                    <div class="logo-text">Rahul R Pawar</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="Resume.pdf">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="main_photo.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Rahul R Pawar</h1>
+                    <p>  I am a passionate Cybersecurity and Software Development enthusiast, eager to solve real-world problems. I specialize in security practices, ethical hacking, and modern software development. As I grow my skills, I am driven to build safe, reliable, and efficient solutions for the future. </p>
+                    <div class="btn-group">
+                        <a href="Resume.pdf" download class="btn active">Download CV</a>
+                        <a href="Contact.html" class="btn">Contact</a>
+                    </div> 
+                    
+                    <div class="social">
+                        <a href="https://www.instagram.com/user_in_peace_?igsh=ZTc4dmZjY2sxcndn" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/14mkUG639L/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/rahul-pawar-734745157" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                        <a href="https://github.com/Userinpeace" target="_blank"><i class="fa-brands fa-github"></i></a>  
+                        <a href="https://x.com/userinpeace_007?t=niuhD-qL4zDFt3skubvkZw&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Cybersecurity Enthusiast","Web Developer"],
+            typedspeed:100,
+            backspeed:100,
+            loop:true
+        })
+    </script>
+</body>
+</html>
